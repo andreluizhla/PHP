@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor Básico</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Conversor Básico v1.0</h1>
     </header>
     <section>
-        <form action="" method="get">
-            
+        <p>Quatos R$ você tem?</p>
+        <form action="res.php" method="get">
+            <label for="float">Carteira</label>
+            <input type="number" name="num" id="num" step="0.01">
+            <input type="submit" value="Enviar">
         </form>
     </section>
 </body>
