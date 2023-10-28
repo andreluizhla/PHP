@@ -11,11 +11,12 @@
         <h1>Analizando um Número Real</h1>
     </header>
     <section>
-        <form action="res.php" method="get">
-            <label for="numero">Número Real:</label>
-            <input type="number" name="num" id="num" step="0.001">
-            <input type="submit" value="Verificar">
-        </form>
+        <?php 
+            $num = $_REQUEST["num"] ?? 0;
+            echo "<p>Analizando o número $num informado pelo usuário:</p>";
+            
+            $abs = abs($num);
+        ?>
     </section>
 </body>
 </html>
